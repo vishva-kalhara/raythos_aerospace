@@ -1,0 +1,23 @@
+@use "typography" as *;
+
+.heading{
+    width: 100%;
+    min-height: 80px;
+    // background-color: antiquewhite;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    &__link{
+        color: var(--black450);
+        cursor: pointer;
+        font-size: 14px !important;
+        font-family: $poppins;
+        font-weight: 600;
+        transition: .4s all ;
+        
+        &:hover{
+            color: var(--blue800);
+            text-decoration: underline;
+        }
+    }
+}

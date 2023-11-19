@@ -1,0 +1,21 @@
+ @use "typography" as *; 
+
+.img{
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__logo__small{
+        width: 36px;
+        height: 36px;
+        background-image: url(../../../assets/icons/Paper\ Plane\ Messages.svg);
+        margin-inline: auto;
+    }
+
+    &__logo_word{
+        color: var(--black900);
+        font-family: $montagu_slab;
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+}

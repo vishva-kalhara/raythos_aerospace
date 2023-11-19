@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montagu+Slab:opsz,wght@16..144,400;16..144,500;16..144,600;16..144,700&family=Plus+Jakarta+Sans:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+$poppins : 'Poppins', sans-serif;
+$montagu_slab : 'Montagu Slab', serif;
+$montaga : 'Montaga', serif;
+$plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
+
+// @use "index" as *;
+
+.typo{
+    &__heading{        
+        &__1{
+            color: var(--black900);
+            font-family: $plus_jakarta_sans;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__subHeading{
+        &__1{
+            color: var(--black450);
+            font-family: $plus_jakarta_sans;
+            font-size: 14px;
+        }
+    }
+}

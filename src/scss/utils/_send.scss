@@ -1,0 +1,20 @@
+.send {
+	width: 100%;
+	display: flex;
+}
+
+.right {
+	@extend .send;
+	justify-content: end;
+}
+
+.center {
+	@extend .send;
+	justify-content: center;
+}
+
+.v__center{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

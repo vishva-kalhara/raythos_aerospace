@@ -1,0 +1,31 @@
+@use "../global/" as *;
+
+.btn{
+    border: none;
+	font-size: 14px !important;
+	font-family: $poppins;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: .2s opacity;
+    
+    &:hover, &:focus{
+        opacity: .85;
+        outline: none
+    }
+}
+
+.filled__button{
+    @extend .btn;
+    background-image: var(--gradPrimary);
+    padding: 8px 16px ;
+    color: white;
+    box-sizing: border-box;
+}
+
+.max__filled__button{
+    @extend .filled__button;
+    padding: 12px;
+    width: 100%;    
+}
+

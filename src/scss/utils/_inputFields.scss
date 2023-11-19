@@ -1,0 +1,30 @@
+@use "../global/" as *;
+
+input {
+	border: none;
+	width: 100%;
+	max-width: 300px;
+	background-color: transparent;
+	outline: none;
+	border-bottom: 2px solid;
+	border-image: var(--gradSecondary);
+	border-image-slice: 1;
+	padding: 8px 4px;
+	transition: border-image 0.3s;
+	color: var(--black900);
+	font-size: 14px !important;
+	font-family: $plus_jakarta_sans;
+	margin-bottom: 10px;
+
+	&:hover,
+	&:focus {
+		border-image: var(--gradPrimary);
+		border-image-slice: 1;
+	}
+
+	&::placeholder {
+		color: var(--black450);
+		// font-size: .25rem;
+		// font-family: $plus_jakarta_sans;
+	}
+}
