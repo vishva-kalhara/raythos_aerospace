@@ -1,0 +1,34 @@
+footer{
+    width: 100%;
+    padding: 36px;
+    box-sizing: border-box;
+
+    %size{
+        width: 36px;
+        height: 36px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 10px;
+    }
+
+    .logo__linkedIn{
+        @extend %size;
+        background-image: url(../../../assets/icons/LinkedIn.svg);
+    }
+
+    .logo__fb{
+        @extend %size;
+        background-image: url(../../../assets/icons/Facebook.svg);
+    }
+
+    .logo__insta{
+        @extend %size;
+        background-image: url(../../../assets/icons/Instagram.svg);
+    }
+
+    .logo__youtube{
+        @extend %size;
+        background-image: url(../../../assets/icons/YouTube.svg);
+    }
+}
+

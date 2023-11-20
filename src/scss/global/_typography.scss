@@ -48,6 +48,14 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
             font-family: $plus_jakarta_sans;
             font-size: 14px;
         }
+        
+        &__2{
+            color: var(--black490);
+            font-family: $montagu_slab;
+            font-size: 14px;
+            font-weight: 600;
+
+        }
     }
 
     &__para{
