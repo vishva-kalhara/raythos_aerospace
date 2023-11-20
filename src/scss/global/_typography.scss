@@ -5,6 +5,7 @@ $montagu_slab : 'Montagu Slab', serif;
 $montaga : 'Montaga', serif;
 $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
 
+
 // @use "index" as *;
 
 .typo{
@@ -16,6 +17,29 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
             font-weight: 700;
             margin-bottom: 4px;
         }
+
+        &__2{
+            font-family: $montagu_slab;
+            color: var(--black900);
+            font-size: 24px;
+            font-weight: 600;
+
+            @media (max-width: 600px) {
+                font-size: 18px !important;
+            }
+        }
+
+        &__3{
+            font-family: $montagu_slab;
+            color: var(--black900);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        
+        @media (max-width: 600px) {
+            font-size: 14px !important;
+        }
     }
 
     &__subHeading{
@@ -23,6 +47,15 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
             color: var(--black450);
             font-family: $plus_jakarta_sans;
             font-size: 14px;
+        }
+    }
+
+    &__para{
+        &__1{
+            font-family: $plus_jakarta_sans;
+            color: var(--black500);
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 }

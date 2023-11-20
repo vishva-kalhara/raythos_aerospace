@@ -8,6 +8,7 @@ a {
 	color: var(--blue800);
 	text-decoration: underline;
 	margin-bottom: 12px;
+    transition: 0.4s all;
 
 	&:hover {
 		opacity: 0.85;
@@ -18,14 +19,9 @@ a {
 .heading__link {
 	@extend a;
 	color: var(--black450);
-	cursor: pointer;
 	font-size: 14px !important;
 	font-family: $poppins;
 	font-weight: 600;
-	transition: 0.4s all;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
     margin: 0;
     text-decoration: none;
 

@@ -1,0 +1,63 @@
+@use "../global/typography" as *;
+
+.spinner{
+    width: 56px;
+    height: 56px;
+    background-image: url(../../../assets/icons/spinner.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: rotate 1.5s infinite linear;
+    margin: 200px auto 0 auto;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+%spec__img{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px
+}
+
+
+.spec__item{
+    &__range{
+        @extend %spec__img;
+        background-image: url(../../../assets/icons/Map\ Pinpoint.svg);
+    }
+
+    &__speed{
+        @extend %spec__img;
+        background-image: url(../../../assets/icons/Severity.svg);
+    }
+
+    &__luggage{
+        @extend %spec__img;
+        background-image: url(../../../assets/icons/Luggage.svg);
+    }
+
+    &__txt{
+        &__1{
+            font-family: $montagu_slab;
+            font-size: 24px;
+        }
+
+        &__2{
+            font-family: $montagu_slab;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 4px;
+            color: var(--black500);
+        }
+    }
+
+}

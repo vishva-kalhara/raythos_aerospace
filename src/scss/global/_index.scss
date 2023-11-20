@@ -3,8 +3,31 @@
 @forward "images";
 @forward "heading";
 
-section{
+section {
+	width: 100%;
+	min-height: 100vh;
+	box-sizing: border-box;
+    padding: 24px;
+}
+
+::-webkit-scrollbar {
+	width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+
+	background-color: #1e1e1e; /* Set the color of the thumb */
+	border-radius: 6px;
+
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1; /* Set the color of the track */
+}
+
+.width920{
+    max-width: 920px;
     width: 100%;
-    min-height: 100vh;
     box-sizing: border-box;
+    margin-inline: auto;
 }
