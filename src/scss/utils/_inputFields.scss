@@ -27,14 +27,50 @@ input {
 		// font-size: .25rem;
 		// font-family: $plus_jakarta_sans;
 	}
+
+    &.title {
+        @extend input;
+        // margin-top: 75px;
+        max-width: 100%;
+        width: 100%;
+        font-family: $montagu_slab;
+        font-size: 24px;
+    }
+
 }
 
-.title {
-    @extend input;
-	margin-top: 75px;
-	max-width: 100%;
-	width: 100%;
-    font-family: $montagu_slab;
-    font-size: 24px;
+div.div_input_product_img{
+    width: 100%;
+    margin: 24px 0;
 
+    & > label{
+        width: 100%;
+        padding: 23px;
+        box-sizing: border-box;
+        // background-color: aquamarine;
+        
+        // background-color: antiquewhite;/
+        border: 2px solid ;
+        border-image: var(--gradSecondary);
+        border-image-slice: 1;
+        min-height: 300px;
+        transition: border-image 0.3s;  
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            border-image: var(--gradPrimary);
+            border-image-slice: 1;
+        }
+
+        & > div{
+            width: 128px;
+            height: 67px;
+            background-image: url(../../../assets/icons/add_to_img.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 }
+

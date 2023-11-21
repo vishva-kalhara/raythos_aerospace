@@ -22,9 +22,14 @@
     padding: 8px 16px ;
     color: white;
     box-sizing: border-box;
-
-
+    
+    &:disabled{
+        @extend .filled__button;
+        background-image: var(--gradSecondary);
+        cursor: not-allowed
+    }
 }
+
 
 .max__filled__button{
     @extend .filled__button;
