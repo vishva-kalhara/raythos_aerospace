@@ -1,6 +1,6 @@
 @use "../global/" as *;
 
-input {
+input , textarea{
 	border: none;
 	width: 100%;
 	max-width: 300px;
@@ -31,6 +31,7 @@ input {
     &.title {
         @extend input;
         // margin-top: 75px;
+        
         max-width: 100%;
         width: 100%;
         font-family: $montagu_slab;
@@ -38,6 +39,17 @@ input {
     }
 
 }
+
+// textarea{
+//     @extend input;
+//     // border-bottom: 0px solid ;
+// 	border: none;
+
+//     // border: 2px solid !important;
+//     border-image: var(--gradSecondary);
+// 	border-image-slice: 1;
+// 	transition: border-image 0.3s;
+// }
 
 div.div_input_product_img{
     width: 100%;

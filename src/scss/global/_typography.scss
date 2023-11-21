@@ -30,10 +30,10 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
         }
 
         &__3{
-            font-family: $montagu_slab;
-            color: var(--black900);
-            font-size: 16px;
-            font-weight: 500;
+            font-family: $montagu_slab !important;
+            color: var(--black900) !important;
+            font-size: 16px !important;
+            font-weight: 500 !important;
         }
 
         
@@ -60,10 +60,10 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
 
     &__para{
         &__1{
-            font-family: $plus_jakarta_sans;
-            color: var(--black500);
-            font-size: 14px;
-            font-weight: 500;
+            font-family: $plus_jakarta_sans !important;
+            color: var(--black500) !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
         }
     }
 }
