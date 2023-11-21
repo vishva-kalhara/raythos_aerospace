@@ -5,7 +5,6 @@ $montagu_slab : 'Montagu Slab', serif;
 $montaga : 'Montaga', serif;
 $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
 
-
 // @use "index" as *;
 
 .typo{
@@ -34,11 +33,10 @@ $plus_jakarta_sans : 'Plus Jakarta Sans', sans-serif;
             color: var(--black900) !important;
             font-size: 16px !important;
             font-weight: 500 !important;
-        }
 
-        
-        @media (max-width: 600px) {
-            font-size: 14px !important;
+            @media (max-width: 600px) {
+                font-size: 14px !important;
+            }
         }
     }
 
