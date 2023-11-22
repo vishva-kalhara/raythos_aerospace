@@ -1,0 +1,47 @@
+.card {
+	&__floorPlan {
+		width: 100%;
+		max-width: 420px;
+		background-color: var(--green100);
+		padding: 24px 24px 36px 24px;
+
+		img {
+			width: 100%;
+		}
+
+		&__persons {
+            display: flex;
+
+			:nth-child(1) {
+				width: 24px;
+				height: 24px;
+                background-image: url(../../../assets/icons/Staff.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+			}
+
+            :nth-child(2){
+                margin-left: 14px;
+            }
+		}
+	}
+
+    &__designScheme{
+        width: 100%;
+        background-color: var(--green100);
+        padding: 0px;
+
+        &__img{
+            width: 100%;
+            background-size: cover;
+            height: 240px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__content{
+            padding: 24px 24px 36px 24px;
+            box-sizing: border-box;
+        }
+    }
+}

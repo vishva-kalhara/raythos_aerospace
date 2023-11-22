@@ -16,6 +16,13 @@
     }
 }
 
+.text__button{
+    @extend .btn;
+    color: var(--black900);
+    text-decoration: underline !important;
+    text-underline-offset: 4px
+}
+
 .filled__button{
     @extend .btn;
     background-image: var(--gradPrimary);
@@ -36,13 +43,32 @@
     width: 100%;    
 }
 
-.underlined_button{
-    @extend .btn;
-    color: var(--black900);
-    background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 8px 16px ;
 
-    // text-decoration: underline !important;
+.customization_radio{
+    .raised_button::before{
+        @extend .btn;
+        color: var(--black900);
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 8px 16px ;
+        content: "Select";
+        transition: .3s background-image;
+    
+    }
+    
+    input[type=radio]:checked + .raised_button::before{
+        @extend .filled__button;
+        content: "Selected";
+    }
 }
+
+.change-content:before {
+    content: "Original Content";
+    color: blue;
+  }
+
+  .change-content:hover:before {
+    content: "New Content";
+    color: red;
+  }
 
