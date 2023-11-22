@@ -44,6 +44,11 @@
         @extend %spec__img;
         background-image: url(../../../assets/icons/Luggage.svg);
     }
+    
+    &__persons{
+        @extend %spec__img;
+        background-image: url(../../../assets/icons/Staff.svg);
+    }
 
     &__txt{
         &__1{

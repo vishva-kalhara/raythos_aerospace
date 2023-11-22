@@ -1,26 +1,34 @@
- @use "typography" as *; 
+@use "typography" as *;
 
-.img{
-    background-position: center;
-    background-repeat: no-repeat;
+.img {
+	background-position: center;
+	background-repeat: no-repeat;
 
-    &__logo__small{
-        width: 36px;
-        height: 36px;
-        background-image: url(../../../assets/icons/Paper\ Plane\ Messages.svg);
-        margin-inline: auto;
-    }
+	&__logo__small {
+		width: 36px;
+		height: 36px;
+		background-image: url(../../../assets/icons/Paper\ Plane\ Messages.svg);
+		margin-inline: auto;
+	}
 
-    &__logo_word{
-        color: var(--black900);
-        font-family: $montagu_slab;
-        font-weight: 600;
-        font-size: 16px;
+	&__logo_word {
+		color: var(--black900);
+		font-family: $montagu_slab;
+		font-weight: 600;
+		font-size: 16px;
+	}
 
-    }
+	&__logo__full {
+		width: 100%;
+		height: 56px;
+		background-image: url(../../../assets/logo_full.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+	}
 
-    &__single__product{
-        width: 100%;
-        max-width: 920px;
-    }
+	&__single__product {
+		width: 100%;
+		max-width: 920px;
+	}
 }
